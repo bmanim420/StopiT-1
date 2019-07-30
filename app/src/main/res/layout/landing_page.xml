@@ -16,8 +16,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:paddingBottom="20dp"
-        android:scaleX=".75"
-        android:scaleY=".75"
+        android:scaleX=".5"
+        android:scaleY=".5"
         android:src="@drawable/anushondhan_logo"/>
 
 </LinearLayout>
