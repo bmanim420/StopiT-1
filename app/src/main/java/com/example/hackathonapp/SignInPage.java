@@ -63,7 +63,7 @@ public class SignInPage extends AppCompatActivity {
 
 
         if(sp.getBoolean("logged",false)){
-            startActivity(new Intent(SignInPage.this, MainPage.class));
+            startActivity(new Intent(SignInPage.this, Fun_page.class));
         }
 
         Login.setOnClickListener(new View.OnClickListener() {
@@ -147,7 +147,7 @@ public class SignInPage extends AppCompatActivity {
         FirebaseUser firebaseUser = firebaseAuth.getInstance().getCurrentUser();
         Boolean emailflag = firebaseUser.isEmailVerified();
 
-        startActivity(new Intent(SignInPage.this, MainPage.class));
+        startActivity(new Intent(SignInPage.this, Fun_page.class));
         finish();
 
     }
