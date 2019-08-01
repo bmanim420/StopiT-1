@@ -32,6 +32,16 @@ public class Fun_page extends AppCompatActivity {
 
             }
         });
+        fp_selfDefence.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i1 = new Intent(Fun_page.this, selfdef.class);
+                startActivity(i1);
+
+
+            }
+        });
 
     }
 }
