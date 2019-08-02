@@ -10,14 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".selfdef"></activity>
-        <activity android:name=".Button1" />
         <activity android:name=".Legal" />
         <activity android:name=".Fun_page" />
         <activity android:name=".SignupPage" />
-        <activity
-            android:name=".MainPage"
-            android:label="@string/title_activity_main_page"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ForgetPass" />
         <activity android:name=".SignInPage" />
         <activity android:name=".LandingPage">

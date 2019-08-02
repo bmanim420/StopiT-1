@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import com.github.barteksc.pdfviewer.PDFView;
 
 public class Fun_page extends AppCompatActivity {
     TextView fp_reportIncident;
@@ -28,7 +29,6 @@ public class Fun_page extends AppCompatActivity {
             public void onClick(View view) {
 
                 startActivity(new Intent(Fun_page.this, Legal.class));
-                finish();
 
             }
         });
@@ -38,9 +38,7 @@ public class Fun_page extends AppCompatActivity {
 
                 Intent i1 = new Intent(Fun_page.this, selfdef.class);
                 startActivity(i1);
-
-
-            }
+    }
         });
 
     }
