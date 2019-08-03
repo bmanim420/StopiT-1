@@ -7,35 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.github.barteksc.pdfviewer.PDFView;
+
 public class Legal extends AppCompatActivity {
 
-    Button b1,b2;
+    PDFView pdf1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_legal);
 
-        b1 = (Button) findViewById(R.id.b1);
-        b2 = (Button) findViewById(R.id.b2);
+        pdf1 = findViewById(R.id.pdf1);
+        pdf1.fromAsset("LegalAction.pdf").load();
 
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent i1 = new Intent(Legal.this, Button1.class);
-                startActivity(i1);
-
-            }
-        });
-
-//        b2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Intent i2 = new Intent(Legal.this, Button2.class);
-//                startActivity(i2);
-//
-//            }
-//        });
     }
 }

@@ -157,7 +157,7 @@ public class SignupPage extends AppCompatActivity implements View.OnClickListene
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(SignupPage.this, "Registration Succesfull!", Toast.LENGTH_LONG).show();
-                                        startActivity(new Intent(SignupPage.this, MainPage.class));
+                                        startActivity(new Intent(SignupPage.this, Fun_page.class));
 
 
                                     } else {
